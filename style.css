@@ -1,0 +1,764 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+@font-face {
+    font-family: 'Cardinal Fruit';
+    src: url(//alephbeauty.com/cdn/shop/t/198/assets/cardinalfruit-regular.otf?v=168598320115983244421684706196);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cardinal Fruit';
+    src: url(//alephbeauty.com/cdn/shop/t/198/assets/cardinalfruit-italic.otf?v=25443891399416678441684706195);
+    font-weight: 400;
+    font-style: italic;
+  }
+@font-face {
+    font-family: 'Untitled Sans';
+    src: url( //alephbeauty.com/cdn/shop/t/198/assets/UntitledSansWeb-Regular.woff?v=184376529559993301131684706195);
+    font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Untitled Sans';
+  src: url( //alephbeauty.com/cdn/shop/t/198/assets/untitled-sans-regular-italic.woff2?v=33300520462694128481684706196);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Untitled Sans';
+  src: url(//alephbeauty.com/cdn/shop/t/198/assets/UntitledSansWeb-Medium.woff?v=25118967817362743121684706196);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Untitled Sans';
+  src: url(//alephbeauty.com/cdn/shop/t/198/assets/untitled-sans-bold.woff?v=35645647407631272411684706198);
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Untitled Sans';
+  src: url(//alephbeauty.com/cdn/shop/t/198/assets/untitled-sans-bold-italic.woff?v=141819758838188056151684706197);
+  font-weight: 700;
+  font-style: italic;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(245, 245, 242);
+    /* background-color: rgb(245, 245, 242); */
+    /* background-color: red; */
+}
+@keyframes slideInLeft {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+#page1{
+    height: 100%;
+    width: 100%;
+    padding: 0 1.68vw;
+    /* padding: 0 1.68vw; */
+    /* background-color: red; */
+}
+#navbar {
+    /* animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.5s;
+        animation-iteration-count: 1;
+        animation-name: slideInLeft; */
+    height: 8.61vh;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 1.68vw; */
+}
+
+#nav-part1 {
+    height: 100%;
+    width: 32.19vw;
+    /* background-color: brown; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+
+#nav-part1 ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+    list-style: none;
+}
+
+#nav-part1 a {
+    font-family: 'Untitled Sans';
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.7px;
+    color: black;
+}
+a:hover{
+    border-bottom: 2px solid black;
+}
+
+#nav-part2 {
+    height: 100%;
+    width: 16.9vw;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-part2 h3 {
+    font-family: 'Cardinal Fruit';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+}
+
+#nav-part3 {
+    height: 100%;
+    width: 32.19vw;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#nav-part3 ul{
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
+    gap: 1.5vw;
+    list-style: none;
+}
+#nav-part3 a {
+    font-family: 'Untitled Sans';
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.7px;
+    color: black;
+}
+#nav-part3 li:hover{
+    border-bottom: 2px solid black;
+}
+#nav-part3 li:nth-child(4):hover{
+    border: none;
+}
+
+#page1 img {
+    /* animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-name: slideInLeft; */
+        /* transition: transform 0.2s;  */
+    height:88%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+/* #page1 img:hover{
+    transform: scale(1.5);
+} */
+#page1 #overlay{
+    /* animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft; */
+    position: absolute;
+    bottom: 0;
+    left: 27%;
+    margin-bottom: 4.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainheading {
+    display: flex;
+    color: white;
+    gap: 0.5vw;
+    font-size: 2.2rem;
+    margin-bottom: 1vw;
+}
+
+#mainheading h1 {
+    font-family: 'Cardinal Fruit';
+    font-weight: 400;
+    font-style: normal;
+}
+#mainheading .mainh1 {
+    font-family: 'Cardinal Fruit';
+    font-weight: 400;
+    font-style: italic;
+}
+
+#overlay h4 {
+    color: white;
+    font-family: 'Untitled Sans';
+    font-weight: 400;
+    margin-bottom: 1.2vw;
+}
+
+#overlay button {
+    color: black;
+    background-color: rgb(227, 221, 211);
+    font-family: 'Untitled Sans';
+    font-weight: 400;
+    font-size: 1rem; 
+    letter-spacing: 0.1rem;
+    padding: 1vw 1.5vw;
+    border: none;
+}
+#overlay button:hover{
+    color: white;
+    background-color: black;
+}
+
+#page2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* background-color: blue; */
+    background-color: rgb(245, 245, 242);
+    padding: 0 1.68vw;
+}
+
+#page2-left {
+    height: 100%;
+    width: 50%;
+    background-color: brown;
+}
+
+#page2-left img {
+    height: 100%;
+    width: 100%;
+}
+
+#page2-right {
+    height: 100%;
+    width: 50%;
+    background-color: rgb(240, 237, 230);
+    padding: 7vw 8vw 5.5vw 8vw ;
+    /* margin: 0 2.71vw ; */
+}
+
+#page2-right-content{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+#page2-right-content h2{
+    font-size: 3.5rem;
+    font-family: 'Cardinal Fruit';
+    font-weight: 400;
+    font-style: none;
+    line-height: 4.5vw;
+}
+
+.italich2{
+    font-family: 'Cardinal Fruit';
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 3vw;
+    margin-left: 15vw;
+    margin-bottom: 2vw;
+}
+
+#page2-right-content p{
+    font-size: 1rem;
+    font-family: 'Untitled Sans';
+    font-weight: 400;
+    margin-bottom: 2vw;
+}
+
+#page2-right-content-items{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 5vw; */
+}
+
+#item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.2vw;
+}
+
+#item h5{
+    font-family: 'Untitled Sans';
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#page2-right-content button{
+    margin-top: 2vw;
+    font-size: 1.2rem;
+    padding: 1.2vw 2vw;
+    border: none;
+    font-family: 'Untitled Sans';
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: rgb(227, 221, 211);
+}
+
+#page2-right-content button:hover{
+    color: white;
+    background-color: black;
+}
+
+#page3 {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 140.091vh;
+    width: 100%;
+    /* background-color: brown; */
+    background-color: rgb(245, 245, 242);
+    padding: 6.72vw 1.34vw;
+    /* padding: 0 1.68vw; */
+
+}
+#page3-center-container{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    height: 142vh;
+}
+#page3-center-content {
+    text-align: center;
+    height: 42.63vh;
+   width: 43.27vw;
+   /* background-color: aqua; */
+   /* padding: 0.87vw 0.87vw 3.15vw 0.87vw; */
+}
+#page3-center-content h2 {
+    /* font-family: 'Untitled Sans'; */
+    font-weight: 500;
+    font-size: 3.7rem;
+}
+#page3-center-content span {
+        font-family:'Cardinal Fruit';
+        font-weight:500;
+        font-style:italic;
+        font-size: 3.7rem;
+}
+#page3-center-content p{
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    font-size: 1.1rem;
+    font-family:  'Untitled Sans';
+    font-weight: 400;
+    text-align: center;
+}
+#page3-center-content button{
+    color: black;
+    background-color: rgb(227, 221, 211);
+    border: none;
+    padding: 1vw 1.5vw;
+    font-size: 1.2rem;
+    font-family:  'Untitled Sans';
+    font-weight: 400;
+}
+#page3-center-content button:hover{
+    color: white;
+    background-color: black;
+}
+#page3-img1 {
+    position: absolute;
+    top: 45%;
+    left: 2%;
+    /* background-color: burlywood; */
+    height: 111.84vh;
+    width: 10.75vw;
+}
+
+#page3-img1 img{
+    /* display: block; */
+    height: 31.63vh;
+    width: 10.75vw;
+    object-fit: cover;
+}
+
+#page3-img2 {
+    position: absolute;
+    top: 16%;
+    left: 31%;
+    /* background-color: burlywood; */
+    height: 111.84vh;
+    width: 10.75vw;
+}
+#page3-img2 img{
+    /* display: block; */
+    height: 31.07vh;
+    width: 13.44vw;
+    object-fit: cover;
+}
+
+#page3-img3 {
+    position: absolute;
+    right: 12%;
+    top: 39%;
+    /* background-color: burlywood; */
+    height: 111.84vh;
+    width: 10.75vw;
+}
+#page3-img3 img{
+    /* display: block; */
+    height: 38.31vh;
+    width: 18.42vw;
+    object-fit: cover;
+}
+
+#page3-img4 {
+    position: absolute;
+    left: 22%;
+    top: 76%;
+    /* background-color: burlywood; */
+    height: 111.84vh;
+    width: 10.75vw;
+}
+#page3-img4 img{
+    /* display: block; */
+    height: 30.07vh;
+    width: 13.78vw;
+    object-fit: cover;
+}
+
+#page3-img5 {
+    position: absolute;
+    left: 60%;
+    top: 76%;
+    /* background-color: burlywood; */
+    height: 111.84vh;
+    width: 10.75vw;
+}
+#page3-img5 img{
+    /* display: block; */
+    height: 22.88vh;
+    width: 8.06vw;
+    object-fit: cover;
+}
+
+#page4 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(245, 245, 242);
+    /* background-color: red; */
+    padding: 0 1.68vw;
+    padding-top: 7.5vw;
+    position: relative;
+}
+
+#page4-content{
+    height: 84.3vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    background-color: rgb(227, 223, 218);
+}
+
+#page4-content-items{
+    width: 47.71vw;
+    height: 41.94vh;
+    /* background-color: blueviolet; */
+    position: absolute;
+    left: 26%;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#page4-part1 {
+    height: 18.30vh;
+    /* background-color: red; */
+    /* margin-top: 2vw; */
+}
+
+#page4-part1 h2{
+    font-family: 'Cardinal Fruit';
+    font-weight: 400;
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+#page4-part2 {
+    height: 10vh;
+    /* background-color: red; */
+    /* margin-top: 10vw; */
+}
+#page4-part2-imgs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page4-part2-imgs img{
+    height: 4.51vh;
+    width: 4.48vw;
+    filter: invert(50%);
+    -webkit-filter: invert(40%);
+}
+#page4-part2-imgs img:hover{
+
+    filter: invert(0%);
+    -webkit-filter: invert(0%);
+}
+
+#page5{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    background-color: rgb(245, 245, 242);
+    padding: 0 1.68vw;
+}
+
+#page5-part1{
+    height: 23vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    padding-top: 3vw;
+    padding-bottom: 0.6vw;
+    display: flex;
+    align-items:center;
+    /* justify-content:; */
+}
+
+
+#page5-part1-heading{
+    /* width: 100%; */
+    /* height: 7.76vh; */
+    /* background-color: chartreuse; */
+    margin-right: 5vw;
+}
+#page5-part1-heading h2{
+    font-family: 'Cardinal Fruit';
+    font-weight: 500;
+    font-size: 3.5rem;
+}
+#page5-part1-links{
+    position: relative;
+    margin-right: 56vw;
+}
+#page5-part1-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 2vw;
+}
+
+#page5-part1-links ul li{
+    font-family: 'Untitled Sans';
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: rgb(133, 133, 133);
+}
+#page5-part1-links ul li:hover{
+    color: black;
+}
+#page5-part1-links ul li:nth-child(1){
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+#page5-part1-button button{
+    color: black;
+    background-color: rgb(227, 221, 211);
+      font-family: 'Untitled Sans';
+    font-weight: 400; 
+    font-size: 1.1rem;
+ 
+    padding: 1vw 1.5vw;
+    border: none;
+}
+#page5-part1-button button:hover{
+    color: white;
+    background-color: black;
+}
+
+#page5-part2{
+    height: calc(100% - 23vh);
+    width: 100%;
+    /* background-color: burlywood; */
+}
+
+#page5-part2-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page5-part2-boxes-box1{
+    /* height: 100%; */
+    width: 31.5vw;
+    background-color: rgb(240, 237, 230);
+    position: relative;
+    overflow: hidden;
+    
+}
+#hidden-content{
+
+    padding-bottom: 0.8vw;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    gap: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+    box-sizing: border-box;
+}
+
+#page5-part2-boxes-box1:hover #hidden-content{
+    visibility: visible; 
+    opacity: 1; 
+}
+
+
+.hidden-text{
+    font-family: 'Untitled Sans';
+    font-weight: 400; 
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    padding: 1vw 0;
+    margin-top: 0;
+    height: 7.62vh;
+    /* box-sizing: border-box; */
+}
+.hidden-img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    /* object-fit: cover; */
+}
+#page5-part2-boxes-box1 img {
+    height: 30vw;
+    width: 30vw;
+    display: block;
+    /* object-fit: cover; */
+}
+#page5-part2-boxes-box1-name{
+    height: 7.59vh;
+    width: 100%;
+    /* background-color: blueviolet; */
+    margin-top: 1.99vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page5-part2-boxes-box1-name-left h5{
+    font-family: 'Untitled Sans';
+    font-weight: 400; 
+    font-size: 1rem;
+    margin-top: 0.1vw;
+}
+#page5-part2-boxes-box1-name-right h5{
+    font-family: 'Untitled Sans';
+    font-weight: 400; 
+    font-size: 1rem;
+}
+#page5-part2-boxes-box2{
+    /* height: 100%; */
+    width: 31.5vw;
+    background-color: rgb(240, 237, 230);
+    /* padding: 2vw; */
+    /* padding-bottom: 1vw; */
+    /* background-color: aqua; */
+    /* padding: 1.68vw 2.01vw; */
+    /* height: 100%; */
+    /* width: 31.5vw; */
+    /* background-color: rgb(240, 237, 230); */
+    padding:0 2vw;
+    padding-bottom: 0.8vw;
+}
+#page5-part2-boxes-box2 img {
+    height: 30vw;
+    width: 30vw;
+}
+#page5-part2-boxes-box2-name{
+    height: 7.59vh;
+    width: 100%;
+    /* background-color: blueviolet; */
+    margin-top: 1.99vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page5-part2-boxes-box2-name-left h5{
+    font-family: 'Untitled Sans';
+    font-weight: 400; 
+    font-size: 1rem;
+    margin-top: 0.1vw;
+}
+#page5-part2-boxes-box2-name-right h5{
+    font-family: 'Untitled Sans';
+    font-weight: 400; 
+    font-size: 1rem;
+}
+#page5-part2-boxes-box3{
+    /* height: 100%; */
+    width: 31.5vw;
+    background-color: rgb(240, 237, 230);
+    /* padding:1vw 2vw; */
+    padding:0 2vw;
+    padding-bottom: 0.8vw;
+    /* background-color: aqua; */
+    /* padding: 1.68vw 2.01vw; */
+}
+#page5-part2-boxes-box3 img {
+    height: 30vw;
+    width: 30vw;
+}
+
+#page5-part2-boxes-box3-name{
+    height: 7.59vh;
+    width: 100%;
+    /* background-color: blueviolet; */
+    margin-top: 1.99vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page5-part2-boxes-box3-name-left h5{
+    font-family: 'Untitled Sans';
+    font-weight: 400; 
+    font-size: 1rem;
+    margin-top: 0.1vw;
+}
+#page5-part2-boxes-box3-name-right h5{
+    font-family: 'Untitled Sans';
+    font-weight: 400; 
+    font-size: 1rem;
+}
